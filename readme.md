@@ -1,7 +1,9 @@
 # Disable Mkdocs' sitemap
 
-Mkdocs officially only supports relative links. While this makes sense there are situation where it is useful to make use of absolute links. For example when creating a document with absolute links to an image folder. 
-If that file is to be moved later on, links are kept intact.
+This plugin disables the generation of a sitemap in Mkdocs sites.
+
+This is useful if you build and commit documentation on every commit and don't want to
+see the git history cluttered with changes to `sitemap.xml` and in particular `sitemap.xml.gz`.
 
 ## Installation
 
