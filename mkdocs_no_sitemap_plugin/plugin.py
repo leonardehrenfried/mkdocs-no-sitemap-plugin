@@ -10,6 +10,6 @@ class NoSitemapPlugin(BasePlugin):
     def __init__(self):
         pass
 
-    def on_config(self, config, **kwargs):
-        config['theme'].static_templates.remove('sitemap.xml')
-        return config
+    def on_post_template(self,output_content,template_name,config):
+        if template_name == "sitemap.xml":
+            return ""
