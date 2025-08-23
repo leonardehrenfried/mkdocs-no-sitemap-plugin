@@ -52,7 +52,7 @@ class UploadCommand(Command):
 
 setup(
     name="mkdocs-no-sitemap-plugin",
-    version="0.0.1",
+    version="0.0.2",
     packages=["mkdocs_no_sitemap_plugin"],
     url="https://github.com/leonardehrenfried/mkdocs-no-sitemap-plugin",
     license="MIT",
